@@ -1,0 +1,295 @@
+/*Big Size Screens*/
+@media (max-width: 1200px)
+{
+	.itemHome .paymentTitle
+	{
+		display:block;
+	}
+	
+	.itemHome .desc
+	{
+		margin-bottom:30px;
+	}
+	
+	.itemHome .paymentTitle .text
+	{
+		margin-bottom:20px;
+	}
+	
+	.itemHome .details .title
+	{
+		font-size:22px;
+	}
+	
+	.owl-theme .owl-controls .owl-buttons div
+	{
+		right:0;
+	}
+	
+	.owl-theme .owl-controls .owl-buttons div.owl-prev
+	{
+		left:0
+	}
+	
+	.footer .footerDown .copyrights
+	{
+		margin-top:4px;
+		font-size:17px;
+	}
+	
+	.footer .footerDown .info li a,
+	.footer .footerDown .info li:first-of-type:before
+	{
+		font-size:17px;
+	}
+	
+	
+}
+
+/* small Screens & tablets & Smart phone */
+@media (max-width: 991px) 
+{
+	.itemHome .details
+	{
+		margin-top:30px;
+	}
+	
+	.slider .container
+	{
+		padding:100px 15px;
+	}
+	
+	.footer .footerDown
+	{
+		display:block;
+	}
+	
+	.footer .footerDown .copyrights
+	{
+		margin-bottom:15px;
+	}
+	
+	.footer .footerDown .info
+	{
+		margin-bottom:15px;
+	}
+	
+	.itemHome .btnStyle
+	{
+		width:100%;
+	}
+	
+	.breadcrumbs
+	{
+		padding:70px 0;
+	}
+	
+	.formOrder .formStyle
+	{
+		padding-left:20px;
+		padding-right:20px;
+		padding-top:30px;
+		padding-bottom:30px;
+	}
+	
+	.formOrder .formBill .padding
+	{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	
+	.formOrder .formStyle .countForm .Count
+	{
+		width:100px;
+	}
+	
+	.formOrder .formBill
+	{
+		padding-left:0;
+		padding-right:0;
+	}
+	
+	.formOrder .formStyle .title
+	{
+		font-size:19px;
+	}
+	
+	.formOrder .formBill .title
+	{
+		padding-right:20px;
+	}
+	
+}
+
+/* Small Screens */
+@media (min-width: 768px) and (max-width: 991px) 
+{
+
+}
+
+/* Mobile & Tablets */
+@media (max-width: 767px) 
+{
+	.itemHome .priceCount
+	{
+		display:block;
+	}
+	
+	.itemHome .priceCount .price
+	{
+		margin-bottom:30px;
+	}
+	
+	.slider .container
+	{
+		padding:70px 15px;
+	}
+	
+	.slider .title
+	{
+	    font-size: 30px;
+	    line-height: 55px;
+	    max-width: 356px;
+	    margin-bottom: 30px;
+	}
+	
+	.header
+	{
+		padding:15px 0;
+	}
+	
+	.header .logo
+	{
+		margin-top:0;
+		width:100px;
+	}
+	
+	.headerHeight
+	{
+		height:85px;
+	}
+	
+	.header .listMenu
+	{
+		display:none;
+	}
+	
+	.openMenu
+	{
+		display:block;
+	}
+	
+	.itemHome .container
+	{
+		padding-left:15px;
+		padding-right:15px;
+	}
+	
+	.itemHome .details .title
+	{
+		font-size:17px;
+		line-height:35px;
+	}
+	
+	.breadcrumbs h2
+	{
+		font-size:30px;
+	}
+	
+	.billForm .formBill .listStyle .itemStyle img,
+	.billForm .formBill .listStyle .itemStyle .details
+	{
+		margin:0 auto;
+		float:none;
+	}
+	
+	.billForm .formBill .listStyle .itemStyle img 
+	{
+		display:block;
+	}
+	
+	.billForm .formBill .listStyle .itemStyle .details
+	{
+		width:100%;
+		padding-right:0;
+		text-align:center
+	}
+	
+	.billForm .formBill .listStyle .itemStyle .details .price
+	{
+		text-align:center
+	}
+}
+
+/* Tablets */
+@media (min-width:480px) and (max-width: 767px)
+{
+
+}
+
+/* Mobile */
+@media (max-width: 479px) 
+{
+	.itemHome .paymentTitle .text span
+	{
+		display:block;
+		margin-top:15px;
+	}
+	
+	.clients .item .client
+	{
+		text-align:center;
+		padding:20px;
+	}
+	
+	.clients .item .client .clientHead
+	{
+		padding-right:0;
+	}
+	
+	.clients .item .client .clientHead img
+	{
+		position:static;
+		margin:0 auto 15px;
+	}
+	
+	.footer .footerDown .info li:first-of-type:before
+	{
+		display:none;
+	}
+	
+	.footer .footerDown .copyrights
+	{
+		font-size:15px;
+	}
+	
+	.footer .footerDown .info li
+	{
+		float:none;
+	}
+	
+	.footer .whats
+	{
+		position:absolute;
+		top:15px;
+		right:15px;
+	}
+	
+	.checkDiv .text
+	{
+		font-size:14px;
+	}
+	
+	.terms .container
+	{
+		padding-left:15px;
+		padding-right:15px;
+	}
+	
+	.breadcrumbs h2
+	{
+		font-size:24px;
+	}
+	
+	
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+   <meta charset="UTF-8" />
+    <!-- IE Compatibility Meta -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- First Mobile Meta  -->
+	<meta name="viewport" content="width=device-width, height=device-height ,  maximum-scale=1 , initial-scale=1">
+    
+    <title></title>
+    
+    <link href="css/font.css" rel='stylesheet' type='text/css'>
+    <link href="css/flaticon.css" rel='stylesheet' type='text/css'>
+
+
+	<link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-rtl.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responisve.css" />
+        
+          
+   <!--[if lt IE 9]>
+       <script src="js/html5shiv.min.js"></script>
+       <script src="js/respond.min.js"></script>
+   <![endif]-->
+  
+    
+</head>
+<body>
+
+	<div class="menuMobile">
+		
+		<div class="BgClose"></div>
+		<div class="menuContent">
+			<div class="headMenu">
+				<a href="index.html" class="logoMenu"><img src="images/logoSplash.png" alt="" /></a>
+				<i class="fa fa-close closeX"></i>
+			</div>
+			<ul class="menuRes">
+    			<li><a href="#">الرئيسية</a></li>
+    			<li><a href="#">طلب المنتج</a></li>
+    			<li><a href="#">اتصل بنا</a></li>
+			</ul>
+		</div>
+	</div>
+    
+    
+	<div class="splash">
+		<img src="images/logoSplash.png" alt="" />
+	</div>
+	
+    <div class="header">
+    	<div class="container">
+    		<a href="index.html" class="logo"><img src="images/logoSplash.png" /></a>
+    		<i class="fa fa-bars openMenu"></i>
+    		<ul class="listMenu">
+    			<li><a href="index.html">الرئيسية</a></li>
+    			<li><a href="form.html" class="active">طلب المنتج</a></li>
+    			<li><a href="#">اتصل بنا</a></li>
+    		</ul>
+    	</div>
+    </div>
+    <div class="headerHeight"></div>
+    
+	    
+    <div class="breadcrumbs">
+        
+        <img class="bg" src="images/bgBread.png" alt="" />
+    	<div class="container">
+            <h2>طلب المنتج</h2>
+            <ul class="list-unstyled">
+                <li class="active"><a href="index.html">الرئيسية</a></li>
+                <li>طلب المنتج</li>
+            </ul>
+        </div>
+        
+    </div>
+  
+  	<div class="formOrder">
+  		<div class="container">
+			<form class="formStyle">
+				<h2 class="title">المعلومات الشخصية</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="text" placeholder="الاسم:" />
+					</div>
+					<div class="col-md-6">
+						<input type="text" placeholder="رقم الجوال:" />
+					</div>
+					<div class="col-md-6">
+						<input type="text" placeholder="رقم الجوال:" />
+					</div>
+					<div class="col-md-6">
+						<div class="countForm priceCount">
+	    					<h2 class="selectCount">حدد الكمية:</h2>
+	                        <div class="Count">
+	                            <span class="minus">-</span>
+	                            <strong>1</strong>
+	                            <span class="plus">+</span>
+	                        </div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="selectStyle">
+							<i class="fa fa-angle-down"></i>
+							<select class="selectmenu">
+								<option>المدينة:</option>
+								<option>المدينة:</option>
+								<option>المدينة:</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<input type="text" placeholder="البريد الالكتروني:" />
+					</div>
+					<div class="col-md-12">
+						<input type="text" placeholder="العنوان:" />
+					</div>
+				</div>
+				<div class="checkDiv">
+					<span class="text">
+						الموافقة على <a href="#" data-toggle="modal" data-target="#modalSing">الشروط والأحكام</a>
+					</span>
+					<label class="switch">
+					  <input type="checkbox">
+					  <span class="sliderSwitch round"></span>
+					</label>
+				</div>
+				<button class="btnForm">التالي</button>
+			</form>
+			<form class="formStyle formBill">
+				<h2 class="title">فاتورة الطلب</h2>
+				<ul class="listBill">
+					<li>رسوم العضوية <span class="numb">215 SAR</span></li>
+					<li>سعر الشحن <span class="numb">215 SAR</span></li>
+					<li>ضريبة القيمة المضافة <span class="numb">215 SAR</span></li>
+					<li>الاجمالي <span class="numb">411 SAR</span></li>
+				</ul>
+				<div class="padding">
+					<button>الدفع الآن</button>
+				</div>
+			</form>
+			<form class="formStyle confirmForm">
+				<h2 class="title">يمكنك التحقق من حالة الطلب</h2>
+				<input type="number" placeholder="أضف رقم الجوال الخاص بك" />
+				<button class="btnForm">ارسل الآن</button>
+			</form>
+  		</div>
+  	</div>
+  
+    
+    <div class="clients">
+    	<div class="container">
+    		<h2 class="title">آراء العملاء</h2>
+    		<div class="owl clientsOwl" id="clientsOwl">
+    			<div class="item">
+    				<div class="client">
+    					<div class="clientHead">
+    						<img src="images/client.png" alt="" />
+    						<h2 class="name">محمد أحمد</h2>
+    						<span class="date">28-3-2012</span>
+    					</div>
+    					<div class="desc">
+    						هنا من خلال لوحة التحكم يتم إضافة تعليقات الزوار
+							بنفس الشكل والتنسيق أثناء مرحلة التركيب
+    					</div>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="client">
+    					<div class="clientHead">
+    						<img src="images/client.png" alt="" />
+    						<h2 class="name">محمد أحمد</h2>
+    						<span class="date">28-3-2012</span>
+    					</div>
+    					<div class="desc">
+    						هنا من خلال لوحة التحكم يتم إضافة تعليقات الزوار
+							بنفس الشكل والتنسيق أثناء مرحلة التركيب
+    					</div>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="client">
+    					<div class="clientHead">
+    						<img src="images/client.png" alt="" />
+    						<h2 class="name">محمد أحمد</h2>
+    						<span class="date">28-3-2012</span>
+    					</div>
+    					<div class="desc">
+    						هنا من خلال لوحة التحكم يتم إضافة تعليقات الزوار
+							بنفس الشكل والتنسيق أثناء مرحلة التركيب
+    					</div>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="client">
+    					<div class="clientHead">
+    						<img src="images/client.png" alt="" />
+    						<h2 class="name">محمد أحمد</h2>
+    						<span class="date">28-3-2012</span>
+    					</div>
+    					<div class="desc">
+    						هنا من خلال لوحة التحكم يتم إضافة تعليقات الزوار
+							بنفس الشكل والتنسيق أثناء مرحلة التركيب
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+    <footer class="footer">
+    	<a href="#" class="whats"><i class="fa fa-whatsapp"></i></a>
+    	<div class="container">
+	    	<a href="#" class="logo"><img src="images/logoSplash.png" /></a>
+	    	<center>
+		    	<ul class="social clearfix">
+		    		<li><a href="#" class="fa fa-facebook"></a></li>
+		    		<li><a href="#" class="fa fa-snapchat-ghost"></a></li>
+		    		<li><a href="#" class="fa fa-instagram"></a></li>
+		    		<li><a href="#" class="fa fa-youtube-play"></a></li>
+		    		<li><a href="#" class="fa fa-twitter"></a></li>
+		    	</ul>
+	    	</center>
+	    	<h2 class="title">تواصل معنا</h2>
+	    	<div class="footerDown">
+	    		<p class="copyrights">جميع الحقوق محفوظة لموقع بوصلة كوم</p>
+	    		<center>
+		    		<ul class="info clearfix">
+		    			<li><a href="#">www.bawsalah.com</a></li>
+		    			<li><a href="#"> E-mail: info@bawsalah.com</a></li>
+		    		</ul>
+	    		</center>
+	    		<a href="#" class="logologoTaha"><img src="images/logoTaha.png" /></a>
+	    	</div>
+    	</div>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+     
+     
+     
+    
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+</body>
+
+</html>

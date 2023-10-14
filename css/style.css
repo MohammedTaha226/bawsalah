@@ -1,0 +1,1528 @@
+/* ------------------------------------------ */
+/*         General & Basic Styles
+/* ------------------------------------------ */
+
+body,html
+{
+	height:100%
+}
+
+body
+{
+	font-family: "Tajawal-Regular";
+}
+
+
+h1,h2,h3,h4,h5,h6
+{
+	margin-top:0;
+	margin-bottom:0
+}
+
+ul
+{
+	margin-bottom:0;
+	padding-right:0;
+	list-style:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+
+p
+{
+	margin-bottom:0
+}
+
+a
+{
+	text-decoration:none!important;
+	outline:none;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:hover, a:active, a:focus {
+    outline: 0;
+}
+
+.center-block
+{
+	float:none
+}
+
+.background-cover
+{
+	-webkit-background-size:cover!important;
+	-moz-background-size:cover!important;
+	-o-background-size:cover!important;
+	background-size:cover!important;
+}
+
+.owl
+{
+	direction: ltr
+}
+
+input,
+textarea,
+button,
+select
+{
+	outline:none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+.Owl
+{
+    direction:ltr;
+}
+
+
+.splash
+{
+	position:fixed;
+	right:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	z-index:999999;
+	text-align:center;
+	padding:0 20px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.splash img
+{
+	display:inline-block;
+	max-width:100%;
+}
+
+/* ------------------------------------------ */
+/*         Header
+/* ------------------------------------------ */
+
+.header
+{
+	position:fixed;
+	right:0;
+	top:0;
+	width:100%;
+	z-index:999;
+	background-color:#fff;
+	box-shadow: 0 0 6px 3px rgba(0,0,0,0.06)
+}
+
+.headerHeight
+{
+	height:110px;
+}
+
+.header .logo
+{
+	float:right;
+	margin-top:10px;
+	max-width:143px;
+}
+
+.header .logo img
+{
+	max-width:100%;
+}
+
+.header .listMenu
+{
+	float:left;
+}
+
+.header .listMenu li
+{
+	float:right;
+}
+
+.header .listMenu li a
+{
+	display:block;
+	height:110px;
+	padding:0 25px;
+	text-align:center;
+	line-height:110px;
+	font-family: "Tajawal-Bold";
+	color:#000;
+	font-size:20px;
+	position:relative;
+}
+
+
+.header .listMenu li a:hover
+{
+	color:#44BAC4
+}
+
+.header .listMenu li a:before
+{
+	content:"";
+	position:absolute;
+	right:50%;
+	bottom:0;
+	width:0;
+	height:4px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.header .listMenu li a:hover:before,
+.header .listMenu li a.active:before
+{
+	right:calc(50% - 55px);
+	width:110px;
+	background-color:#44BAC4
+}
+
+.openMenu
+{
+	float:left;
+	color:#000;
+	z-index:999;
+	font-size:20px;
+	cursor:pointer;
+	display:none;
+	margin-top:15px;
+	border:2px solid #000;
+	width:30px;
+	height:30px;
+	text-align:center;
+	line-height:27px;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.transformPage
+{
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.menuMobile
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:99999;
+	left:0;
+	top:0;
+	display:none
+}
+
+.menuMobile .BgClose
+{
+	background-color:rgba(0,0,0,0.4);
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:99;
+	cursor:pointer
+}
+
+.menuMobile .menuContent
+{
+	width:320px;
+	max-width:100%;
+	background-color:#fff;
+	position:absolute;
+	top:0;
+	height:100%;
+    overflow: auto;
+	z-index:100;
+	right:-320px;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.menuMobile .menuContent.active
+{
+	right:0
+}
+
+.menuMobile .headMenu
+{
+	padding:20px 0;
+	background-color:#fff;
+	padding-left: 21px;
+}
+
+.menuMobile .menuContent .changeLang
+{
+	display:inline-block;
+	color:#000;
+	border-bottom:1px solid #000;
+	text-transform: uppercase;
+	float:right;
+}
+
+.menuMobile .menuContent .closeX
+{
+	position: absolute;
+	top:15px;
+	left:20px;
+	font-size:16px;
+	color:#7E206E;
+	border:2px solid #7E206E;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	text-align:center;
+	line-height:25px;
+	padding:0;
+	opacity:1;
+	cursor:pointer;
+	text-transform:uppercase;
+	font-style: normal
+}
+
+.menuMobile .menuContent .closeX i
+{
+	font-size:20px;
+	float:left;
+}
+
+.menuMobile .menuContent .closeX:hover
+{
+	opacity: 1
+}
+
+.menuMobile .menuContent .logoMenu
+{
+	display:block;
+	margin:15px auto 20px;
+	width:180px;
+}
+
+.menuMobile .menuContent .logoMenu img
+{
+	max-width:100%
+}
+
+.menuMobile .menuContent .menuRes li a
+{
+	color:#000;
+	height:65px;
+	display:block;
+	font-size:15px;
+	padding:0 15px;
+	line-height:60px;
+	border-bottom:1px solid #eee
+}
+
+.menuMobile .menuContent .menuRes li a i
+{
+	width:30px;
+	float:right;
+	margin-left:15px;
+	text-align:center;
+	color:#20489A;
+	font-size:20px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.menuMobile .menuContent .menuFooter
+{
+	text-align:center;
+	margin-top:15px;
+	padding-top:20px;
+	padding-bottom:30px
+}
+
+.menuMobile .menuContent .menuFooter a
+{
+	margin:0 5px;
+	width:35px;
+	height:35px;
+	background-color:#20489A;
+	color:#fff;
+	border-radius:50%;
+	text-align:center;
+	line-height:35px;
+	font-size:16px;
+}
+
+/* ------------------------------------------ */
+/*         Slider
+/* ------------------------------------------ */
+
+.slider
+{
+	position:relative;
+	overflow:hidden;
+	z-index:1
+}
+
+.slider .bgImg
+{
+	position:absolute;
+	right:0;
+	top:0;
+	min-height:100%;
+	min-width:100%;
+	z-index:-2;
+}
+
+.slider .bgGrid
+{
+	position:absolute;
+	right:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index: -1;
+}
+
+.slider .container
+{
+	padding:240px 15px;
+}
+
+.slider .title
+{
+	font-size:60px;
+	line-height:100px;
+	color:#fff;
+	font-family: "Tajawal-Bold";
+	max-width:570px;
+	margin-bottom:50px;
+}
+
+.slider .title span
+{
+	color:#44BAC4
+}
+
+.slider .btnSlider
+{
+	width:200px;
+	height:50px;
+	line-height:50px;
+	color:#000;
+	background-color:#fff;
+	border-radius:50px;
+	font-size:18px;
+	display:block;
+	text-align:center;
+	font-family: "Tajawal-Bold";
+}
+
+/* ------------------------------------------ */
+/*         Features
+/* ------------------------------------------ */
+
+.features
+{
+	padding:55px 0 25px;
+	background-color:#F3F3F3;
+	z-index:1;
+	position:relative;
+}
+
+.features .item
+{
+	margin-bottom:30px;
+	margin-top:10px;
+	position:relative;
+	padding:50px 15px 35px;
+	background-color:#fff;
+	top:0;
+	color:#000;
+	text-align:center;
+	box-shadow:0 0 6px 3px rgba(0,0,0,0.06);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.features .item:hover
+{
+	top:-10px;
+	color:#fff;
+	background-color:#7E206E
+}
+
+.features .item .icon
+{
+	margin-bottom:30px;
+	display:inline-block;
+	font-size:55px;
+	margin-bottom:20px;
+}
+
+.features .item .title
+{
+	font-family: "Tajawal-Bold";
+	margin-bottom:20px;
+	font-size:18px;
+}
+
+.features .item .desc
+{
+	max-width:270px;
+	line-height:33px;
+	font-size:16px;
+	margin:0 auto;
+}
+
+/* ------------------------------------------ */
+/*         clients
+/* ------------------------------------------ */
+
+.clients
+{
+	padding:75px 0 70px;
+	position:relative;
+	z-index: 1;
+	background-color:#fff;
+}
+
+.clients .title
+{
+	text-align:center;
+	margin-bottom:50px;
+	color:#000;
+	font-size:40px;
+	font-family: "Tajawal-Bold";
+}
+
+.clients .item
+{
+	padding:20px;
+}
+
+.clients .item .client
+{
+	direction:rtl;
+	padding:45px 25px 35px;
+	margin-top:10px;
+	position:relative;
+	top:0;
+	box-shadow:0 0 6px 3px rgba(0,0,0,0.06);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.clients .item .client:hover
+{
+	top:-10px;
+	background-color:#F8F8F8;
+}
+
+.clients .item .client .clientHead
+{
+	padding-right:95px;
+	padding-top:15px;
+	position:relative;
+	margin-bottom:22px;
+}
+
+.clients .item .client .clientHead img
+{
+	position:absolute;
+	right:0;
+	width:82px;
+	height:82px;
+	border-radius:50%;
+	top:0;
+}
+
+.clients .item .client .clientHead .name
+{
+	font-size:22px;
+	font-family: "Tajawal-Bold";
+	color:#000;
+	margin-bottom:10px;
+}
+
+.clients .item .client .clientHead .date
+{
+	display:block;
+	font-size:16px;
+	font-family: "Tajawal-Medium";
+	color:#000;
+	margin-bottom:25px;
+}
+
+.clients .item .client .desc
+{
+	max-width:330px;
+	line-height:33px;
+	color:#000;
+	font-size:14px;
+	font-family: "Tajawal-Medium";
+}
+
+.owl-theme .owl-controls .owl-buttons div
+{
+    width: 35px;
+    height: 35px;
+    background-color: #F3F3F3;
+    color: #707070;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 43px;
+    opacity: 1;
+    position: absolute;
+    right: -50px;
+    top: calc(50% - 17.5px);
+    margin: 0;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.owl-theme .owl-controls .owl-buttons div:hover
+{
+	background-color:#7E206E;
+	color:#fff;
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-prev
+{
+	right:auto;
+	left:-50px;
+}
+
+/* ------------------------------------------ */
+/*         Footer
+/* ------------------------------------------ */
+
+.footer
+{
+	padding:60px 0 40px;
+	background-color:#11172E;
+	text-align:center;
+	overflow:hidden;
+	position:relative;
+}
+
+.footer .whats
+{
+	position:fixed;
+	right:20px;
+	bottom:40px;
+	width:45px;
+	height:45px;
+	line-height:45px;
+	border-radius: 5px;
+	background-color:#55CD6C;
+	color:#fff;
+	font-size:20px;
+}
+
+.footer .logo
+{
+	width:143px;
+	margin:0 auto 35px;
+	display:block;
+}
+
+.footer .logo img
+{
+	max-width:100%;
+}
+
+.footer  .social
+{
+	display:inline-block;
+	margin-bottom:35px;
+}
+
+.footer  .social li
+{
+	float:right;
+}
+
+.footer  .social li:not(:last-of-type)
+{
+	margin-left:15px;
+}
+
+.footer  .social li a
+{
+	font-size:25px;
+	color:#4A5068
+}
+
+.footer .title
+{
+	font-family: "Tajawal-Bold";
+	color:#fff;
+	margin-bottom:25px;
+	text-align:center
+}
+
+.footer .footerDown 
+{
+	display:grid;
+	grid-template-columns: auto auto auto;
+}
+
+.footer .footerDown .copyrights
+{
+	font-size:15px;
+	color:#828282;
+	margin-top:10px;
+	font-family: "Tajawal-Medium";
+}
+
+.footer .footerDown .info
+{
+	display:inline-block;
+	margin-top:3px;
+}
+
+.footer .footerDown .info li
+{
+	float:left;
+}
+
+.footer .footerDown .info li:first-of-type:before
+{
+	content:"|";
+	color:#fff;
+	float:right;
+	margin:0 15px;
+	font-size:20px;
+}
+
+.footer .footerDown .info li a
+{
+	color:#fff;
+	font-size:17px;
+	font-family: "Tajawal-Medium";
+}
+
+.footer .footerDown .logologoTaha
+{
+	display:block;
+}
+
+.footer .footerDown .logologoTaha img
+{
+	max-width:100%;
+}
+
+/* ------------------------------------------ */
+/*         item Home
+/* ------------------------------------------ */
+
+.itemHome
+{
+	padding-bottom:60px;
+	background-color:#F3F3F3;
+	position:relative;
+	z-index: 1
+}
+
+.itemHome .container
+{
+	box-shadow:0 0 6px 3px rgba(0,0,0,0.06);
+	background-color:#fff;
+	padding:35px 40px;
+}
+
+.itemHome .itemsOwl img
+{
+	width:100%;
+}
+
+.itemHome .owl-theme .owl-controls .owl-buttons div
+{
+	right:0
+}
+
+.itemHome .owl-theme .owl-controls .owl-buttons div.owl-prev
+{
+	left:0;
+}
+
+.itemHome .details
+{
+	padding-top:10px;
+}
+
+.itemHome .details .title
+{
+	font-family: "Tajawal-Bold";
+	color:#000;
+	line-height:50px;
+	margin-bottom:25px;
+	font-size:27px;
+	max-width:528px;
+}
+
+.itemHome .priceCount
+{
+	justify-content:space-between;
+	display:flex;
+	margin-bottom:30px;
+}
+
+.itemHome .priceCount .price
+{
+	font-size:20px;
+	color:#7E206E;
+	font-family: "Tajawal-Bold";
+	margin-top:10px;
+}
+
+.itemHome .countStyle
+{
+	justify-content:space-between;
+	display:flex;
+	width:220px;
+}
+
+.itemHome .countStyle .total
+{
+	font-family: "Tajawal-Bold";
+	color:#000;
+	font-size:20px;
+	margin-top:8px;
+}
+
+.Count
+{
+	width:125px;
+	text-align:center;
+	color:#5f5f5f;
+	justify-content:space-between;
+	display:flex;
+}
+
+.Count span
+{
+	cursor:pointer;
+	font-size:25px;
+	width:30px;
+	height:30px;
+	background-color:#E6E6E6;
+	color:#000;
+	border-radius:50%;
+	display:block;
+	line-height: 25px;
+	margin-top:8px;
+}
+
+.Count strong
+{
+	font-size:20px;
+	margin-top:9px;
+	color:#000
+}
+
+.itemHome .desc
+{
+	margin-bottom:15px;
+	border:1px solid #E2E2E2;
+	border-radius: 10px;
+	padding:20px;
+	text-align:center;
+	font-size:16px;
+	font-family: "Tajawal-Medium";
+}
+
+.itemHome .paymentTitle
+{
+	justify-content:space-between;
+	display:flex;
+	margin-bottom:25px;
+}
+
+.itemHome .paymentTitle .text
+{
+	font-family: "Tajawal-Bold";
+	font-size:20px;
+}
+
+.itemHome .paymentTitle .text span
+{
+	font-size:16px;
+	font-family: "Tajawal-Medium";
+}
+
+.itemHome .paymentTitle .text span i
+{
+	width:20px;
+	height:20px;
+	background-color:#2DCCA6;
+	border-radius:50%;
+	margin-left:5px;
+	display:inline-block;
+	text-align:center;
+	color:#fff;
+	line-height:20px;
+	font-size:12px;
+}
+
+.itemHome .tabsBtn
+{
+	margin-bottom:20px;
+	border:1px solid #E2E2E2;
+	border-radius:10px;
+}
+
+.itemHome .tabsBtn li
+{
+	float:right;
+	text-align:center;
+	height:60px;
+	line-height:60px;
+	font-family: "Tajawal-Bold";
+	cursor: pointer;
+	width:50%;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.itemHome .tabsBtn li.active
+{
+	background-color:#E2E2E2
+}
+
+.itemHome .tabs .tab:not(:first-of-type)
+{
+	display:none;
+}
+
+.itemHome .tabs .listTab li:not(:last-of-type)
+{
+	margin-bottom:10px;
+}
+
+.itemHome .tabs .listTab li 
+{
+	position:relative;
+	padding-right:25px;
+	font-size:15px;
+	font-family: "Tajawal-Medium";
+}
+
+.itemHome .tabs .listTab li:before
+{
+	content:"\f00c";
+	font: normal normal normal 14px/1 FontAwesome;
+	position: absolute;
+	right:0;
+	top:3px;
+	color:#C7C7C7;
+}
+
+.itemHome .btnStyle
+{
+	width:200px;
+	height:50px;
+	line-height:50px;
+	border-radius:50px;
+	background-color:#7E206E;
+	color:#fff;
+	font-family: "Tajawal-Bold";
+	font-size:18px;
+	float:left;
+	text-align:center;
+	margin-top:20px;
+}
+
+
+/* ------------------------------------------ */
+/*         breadcrumbs
+/* ------------------------------------------ */
+
+.breadcrumbs
+{
+    padding:170px 0 80px;
+    text-align:center;
+    position:relative;
+    overflow: hidden;
+}
+
+.breadcrumbs:before
+{
+	content:"";
+	position:absolute;
+	right:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.7);
+	z-index:-1
+}
+
+.breadcrumbs .container
+{
+	position:relative;
+	z-index:1
+}
+
+.breadcrumbs h2
+{
+	color:#fff;
+	font-size:40px;
+	position:relative;
+	margin-bottom:40px;
+	font-family: "Tajawal-Bold";
+}
+
+.breadcrumbs .bg
+{
+    min-width:100%;
+    min-height:100%;
+    left: 0;
+    top:0;
+    position:absolute;
+    z-index:-2
+}
+
+.breadcrumbs ul li 
+{
+    display:inline-block;
+    color:#919191;
+    font-size:15px;
+    font-family: "Tajawal-Bold";
+}
+
+.breadcrumbs ul li:not(:first-of-type):before
+{
+    content:"/";
+    padding:0 10px;
+    color:#919191
+}
+
+.breadcrumbs ul li a
+{
+    color:#919191;
+}
+
+.breadcrumbs ul li.active a
+{
+	color:#919191
+}
+
+/* ------------------------------------------ */
+/*         terms
+/* ------------------------------------------ */
+
+.terms
+{
+	padding:100px 15px 50px;
+	background-color:#F3F3F3
+}
+
+.terms .container
+{
+	background-color:#fff;
+	box-shadow:0 0 6px 3px rgba(0,0,0,0.06);
+	padding:30px 25px;
+	margin-bottom:25px;
+}
+
+.terms .title
+{
+	font-size:25px;
+	margin-bottom:20px;
+	font-family: "Tajawal-Bold";
+}
+
+.terms .desc
+{
+	font-size:18px;
+	font-family: "Tajawal-Medium";
+	line-height:35px;
+}
+
+.terms .subTitle
+{
+	font-size:18px;
+	font-family: "Tajawal-Bold";
+	margin-bottom:20px;
+}
+
+.terms ul li.desc
+{
+	margin-bottom:15px;
+}
+
+
+.checkDiv
+{
+	margin-top:40px;
+	text-align:right;
+	padding-left:55px;
+	position: relative;
+	align-self: center;
+	display:inline-block;
+}
+
+.checkDiv .text
+{
+	color:#8D8D8D;
+	font-size:18px;
+	font-family: "Tajawal-Bold";
+}
+
+.checkDiv .text a
+{
+	color:#7E206E;
+	text-decoration: underline!important;
+}
+
+.switch {
+  position: absolute;
+  left:0;
+  top:-1px;
+  display: inline-block;
+  width: 42px;
+  height: 26px;
+  margin-bottom:0;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sliderSwitch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius:15px;
+  background-color: #F3F3F3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderSwitch:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: -5px;
+    bottom: 1.7px;
+    background-color: white;
+    -webkit-transition: .4s;
+    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+    transition: .4s;
+    border-radius:50%;
+   -webkit-transform: translateX(23px);
+  	-ms-transform: translateX(23px);
+  	transform: translateX(23px);
+}
+
+.switch input:checked + .sliderSwitch {
+  background-color: #7E206E;
+}
+
+.switch input:checked + .sliderSwitch:before {
+  -webkit-transform: translateX(7px);
+  -ms-transform: translateX(7px);
+  transform: translateX(7px);
+}
+
+/* ------------------------------------------ */
+/*         Form Style
+/* ------------------------------------------ */
+
+.formOrder
+{
+	padding:75px 0 65px;
+	background:#F3F3F3
+}
+
+.formOrder .formStyle,
+.formOrder .formBill
+{
+	max-width:753px;
+	margin:0 auto 45px;
+	background-color:#fff;
+	padding:60px;
+	box-shadow:0 0 6px 3px rgba(0,0,0,0.06);
+}
+
+.formOrder .formStyle.confirmForm
+{
+	max-width:500px;
+	text-align:center;
+}
+
+.formOrder .formStyle.confirmForm input
+{
+	text-align:center;
+}
+
+.formOrder .formStyle.confirmForm button
+{
+	margin-top:0;
+}
+
+.formOrder .formStyle .title
+{
+	font-family: "Tajawal-Bold";
+	margin-bottom:40px;
+	color:#000;
+	font-size:25px;
+}
+
+.formOrder .formStyle input,
+.footer .form .formCard .inputStyle .ui-selectmenu-button.ui-button
+{
+	width:100%;
+	height:60px;
+	padding:0 25px;
+	font-size:16px;
+	border:none;
+	font-family: "Tajawal-Bold";
+	background-color:#F1F1F1;
+	margin-bottom:30px;
+	color:#606060;
+}
+
+.formOrder .formStyle input::input-placeholder
+{
+    color: #606060;
+}
+
+.formOrder .formStyle input::-webkit-input-placeholder
+{
+    color: #606060;
+}
+
+.formOrder .formStyle input:-moz-placeholder
+{
+    color: #606060;  
+}
+
+.formOrder .formStyle input::-moz-placeholder
+{
+    color: #606060;
+}
+
+.formOrder .formStyle input:-ms-input-placeholder
+{  
+    color: #606060;
+}
+
+.formOrder .formStyle .countForm
+{
+	background-color:#F1F1F1;
+	margin-bottom:30px;
+	height:60px;
+	padding:0 25px;
+	padding-left:15px;
+	font-family: "Tajawal-Bold";
+	justify-content:space-between;
+	display:flex;
+}
+
+.formOrder .formStyle .checkDiv
+{
+	margin-top:20px;
+}
+
+.formOrder .formStyle .countForm .selectCount
+{
+	font-size:16px;
+	line-height:60px;
+	color:#606060;
+}
+
+.formOrder .formStyle .countForm .Count
+{
+	margin-top:7px;
+}
+
+
+.formOrder .formStyle button
+{
+	display:block;
+	border:none;
+	width:100%;
+	height:60px;
+	background-color:#7E206E;
+	color:#fff;
+	font-size:16px;
+	font-family: "Tajawal-Bold";
+	margin-top:30px;
+}
+
+.formOrder .formStyle .selectStyle
+{
+	position:relative;
+	z-index:1;
+	margin-bottom:30px;
+	background-color:#F1F1F1;
+}
+
+.formOrder .formStyle .selectStyle i
+{
+	position:absolute;
+	left:20px;
+	top:18px;
+	font-size:25px;
+	color:#707070;
+	z-index: -1;
+}
+
+.ui-selectmenu-button.ui-button
+{
+	color:#606060;
+	border:none;
+	text-align:right;
+	padding:0;
+	padding-right:25px;
+	width:100%;
+	height:60px;
+	outline:none;
+	background:none;
+}
+
+.ui-selectmenu-text
+{
+	font-size:16px;
+	color:#606060;
+	margin-right:0;
+	height:60px;
+	line-height:60px;
+	font-family: "Tajawal-Bold";
+}
+
+.ui-button .ui-icon
+{
+	display:none;
+}
+
+.ui-menu .ui-menu-item-wrapper
+{
+	font-family: "Tajawal-Bold";
+    height: 45px;
+    line-height: 37px;
+}
+
+.ui-state-active, 
+.ui-widget-content .ui-state-active
+{
+	background-color:#7E206E;
+	border-color:#7E206E
+}
+
+.formOrder .formBill
+{
+	padding:55px 0;
+}
+
+.formOrder .formBill .title
+{
+	padding-right:40px;
+	font-size:25px;
+	margin-bottom:40px;
+}
+
+.formOrder .formBill .padding
+{
+	padding:0 60px;
+}
+
+.formOrder .formBill .listBill li
+{
+	border-top:1px solid #E5E5E5;
+	padding:20px 25px;
+	justify-content:space-between;
+	display:flex;
+	font-size:16px;
+	color:#808080;
+	font-family: "Tajawal-Bold";
+}
+
+.formOrder .formBill .listBill li .numb
+{
+	direction: ltr
+}
+
+.formOrder .formBill .listBill li:last-of-type
+{
+	background-color:#EEEEEE;
+	font-size:25px;
+	color:#000
+}
+
+/* ------------------------------------------ */
+/*         Bill
+/* ------------------------------------------ */
+
+.billForm .formBill
+{
+	padding:20px!important;
+}
+
+.billForm .formBill .logoForm
+{
+	padding:45px 15px;
+	text-align:center;
+	margin-bottom:25px;
+	background-color:#F2F2F2
+}
+
+.billForm .formBill .logoForm img
+{
+	width:150px;
+}
+
+.billForm .formBill .title
+{
+	font-size:20px;
+	font-family: "Tajawal-Bold";
+	margin-bottom:15px;
+	padding-right:20px;
+	margin-right:0;
+	color:#7E206E
+}
+
+.billForm .formBill .desc
+{
+	font-size:14px;
+	font-family: "Tajawal-Medium";
+	line-height:25px;
+	padding-right:20px;
+	margin-bottom:30px;
+}
+
+.billForm .formBill button
+{
+	background-color:#44BAC4;
+	margin-bottom:30px;
+}
+
+.billForm .formBill .text
+{
+	display:block;
+	margin-bottom:25px;
+	color:#747474;
+	font-size:16px;
+	font-family: "Tajawal-Medium";
+	text-align:center;
+}
+
+.billForm .formBill .text.bold
+{
+	font-family: "Tajawal-Bold";
+}
+
+.billForm .formBill .listStyle
+{
+	background-color:#F2F2F2
+}
+
+.billForm .formBill .listStyle .itemStyle
+{
+	padding:25px;
+}
+
+.billForm .formBill .listStyle .itemStyle img
+{
+	width:125px;
+	height:125px;
+	border:1px solid #E5E2E2;
+	background-color:#fff;
+	float:right;
+}
+
+.billForm .formBill .listStyle .itemStyle .details
+{
+	padding-right:20px;
+	padding-top:20px;
+	float:right;
+	width:calc(100% - 125px)
+}
+
+.billForm .formBill .listStyle .itemStyle .details .titleStyle
+{
+	font-size:16px;
+	margin-bottom:15px;
+	font-family: "Tajawal-Medium";
+}
+
+.billForm .formBill .listStyle .itemStyle .details .price
+{
+	display:block;
+	direction: ltr;
+	text-align:right;
+	margin-bottom:10px;
+	font-size:16px;
+	font-family: "Tajawal-Bold";
+}
+
+.billForm .formBill .listStyle .itemStyle .details .count
+{
+	color:#747474;
+	font-size:16px;
+	font-family: "Tajawal-Medium";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
